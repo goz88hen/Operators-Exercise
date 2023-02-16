@@ -1,4 +1,5 @@
 ﻿using System.Formats.Asn1;
+using System.Globalization;
 using System.Reflection.Metadata.Ecma335;
 using System.Security.Cryptography.X509Certificates;
 
@@ -8,6 +9,12 @@ namespace OperatorExercise
     {
         static void Main(string[] args)
         {
+            var i = 3;
+            var j = 4;
+            var k = ++i * j++;
+
+            Console.WriteLine(k);
+
             //------Exercise 1-------------
 
             var a = 17;
@@ -29,8 +36,10 @@ namespace OperatorExercise
 
             return Math.Sqrt(area);
         }
-
+      
+        
     }
+            
 
 }
 
